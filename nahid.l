@@ -227,145 +227,145 @@ Identifier              ({char}|{digit}|{special})+
     return NAME;
 }
 ">>="            { count(); 
-    fprintf(flexo,"TOKEN 35 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 1 : %s\n",yytext);
     return(RIGHT_ASSIGN); }
 "<<="            { count(); 
-    fprintf(flexo,"TOKEN 36 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 2 : %s\n",yytext);
     return(LEFT_ASSIGN); }
 "+="            { count(); 
-    fprintf(flexo,"TOKEN 37 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 3 : %s\n",yytext);
     return(ADD_ASSIGN); }
 "-="            { count(); 
-    fprintf(flexo,"TOKEN 38 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 4 : %s\n",yytext);
     return(SUB_ASSIGN); }
 "*="            { count(); 
-    fprintf(flexo,"TOKEN 39 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 5 : %s\n",yytext);
     return(MUL_ASSIGN); }
 "/="            { count(); 
-    fprintf(flexo,"TOKEN 40 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 6 : %s\n",yytext);
     return(DIV_ASSIGN); }
 "%="            { count(); 
-    fprintf(flexo,"TOKEN 41 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 7 : %s\n",yytext);
     return(MOD_ASSIGN); }
 "&="            { count(); 
-    fprintf(flexo,"TOKEN 42 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 8 : %s\n",yytext);
     return(AND_ASSIGN); }
 "^="            { count(); 
-    fprintf(flexo,"TOKEN 43 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 9 : %s\n",yytext);
     return(XOR_ASSIGN); }
 "|="            { count(); 
-    fprintf(flexo,"TOKEN 44 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 10 : %s\n",yytext);
     return(OR_ASSIGN); }
 ">>"            { count(); 
-    fprintf(flexo,"TOKEN 45 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 11 : %s\n",yytext);
     return(RIGHT_OP); }
 "<<"            { count(); 
-    fprintf(flexo,"TOKEN 46 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 12 : %s\n",yytext);
     return(LEFT_OP); }
 "++"            { count(); 
-    fprintf(flexo,"TOKEN 47 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 13 : %s\n",yytext);
     return(INC_OP); }
 "--"            { count(); 
-    fprintf(flexo,"TOKEN 48 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 14 : %s\n",yytext);
     return(DEC_OP); }
 "->"            { count(); 
-    fprintf(flexo,"TOKEN 49 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 15 : %s\n",yytext);
     return(PTR_OP); }
 "&&"            { count();
-    fprintf(flexo,"TOKEN 50 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 16 : %s\n",yytext);
     return(AND_OP); }
 "||"            { count(); 
-    fprintf(flexo,"TOKEN 51 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 17 : %s\n",yytext);
     return(OR_OP); }
 "<="            { count(); 
-    fprintf(flexo,"TOKEN 52 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 18 : %s\n",yytext);
     return(LE_OP); }
 ">="            { count(); 
-    fprintf(flexo,"TOKEN 53 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 19 : %s\n",yytext);
     return(GE_OP); }
 "=="            { count(); 
-    fprintf(flexo,"TOKEN 54 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 20 : %s\n",yytext);
     return(EQ_OP); }
 "!="            { count(); 
-    fprintf(flexo,"TOKEN 55 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 21 : %s\n",yytext);
     return(NE_OP); }
 
 ";"            { count(); 
-    fprintf(flexo,"TOKEN 56 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 22 : %s\n",yytext);
     return(';'); }
 ("{"|"<%")       { count(); 
-    fprintf(flexo,"TOKEN 57 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 23 : %s\n",yytext);
     return('{'); }
 ("}"|"%>")       { count(); 
-    fprintf(flexo,"TOKEN 58 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 24 : %s\n",yytext);
     return('}'); }
 ","            { count(); 
-    fprintf(flexo,"TOKEN 59 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 25 : %s\n",yytext);
     return(','); }
 ":"            { count(); 
-    fprintf(flexo,"TOKEN 60 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 26 : %s\n",yytext);
     return(':'); }
 "="            { count(); 
-    fprintf(flexo,"TOKEN 61 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 27 : %s\n",yytext);
     return('='); }
 "("            { count();
-    fprintf(flexo,"TOKEN 62 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 28 : %s\n",yytext);
     return('('); }
 ")"            { count();
-    fprintf(flexo,"TOKEN 63 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 29 : %s\n",yytext);
     return(')'); }
 ("["|"<:")       { count();
-    fprintf(flexo,"TOKEN 64 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 30 : %s\n",yytext);
     return('['); }
 ("]"|":>")       { count();
-    fprintf(flexo,"TOKEN 65 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 31 : %s\n",yytext);
     return(']'); }
 "."            { count();
-    fprintf(flexo,"TOKEN 66 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 32 : %s\n",yytext);
     return('.'); }
 "&"            { count(); 
-    fprintf(flexo,"TOKEN 67 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 33 : %s\n",yytext);
     return('&'); }
 "!"            { count();
-    fprintf(flexo,"TOKEN 68 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 34 : %s\n",yytext);
     return('!'); }
 "~"            { count();
-    fprintf(flexo,"TOKEN 69 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 35 : %s\n",yytext);
     return('~'); }
 "-"            { count(); 
-    fprintf(flexo,"TOKEN 70 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 36 : %s\n",yytext);
     return('-'); }
 "+"            { count(); 
-    fprintf(flexo,"TOKEN 71 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 37 : %s\n",yytext);
     return('+'); }
 "*"            { count(); 
-    fprintf(flexo,"TOKEN 72 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 38 : %s\n",yytext);
     return('*'); }
 "/"            { count(); 
-    fprintf(flexo,"TOKEN 73 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 39 : %s\n",yytext);
     return('/'); }
 "%"            { count();
-    fprintf(flexo,"TOKEN 74 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 40 : %s\n",yytext);
     return('%'); }
 "<"            { count(); 
-    fprintf(flexo,"TOKEN 75 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 41 : %s\n",yytext);
     return('<'); }
 ">"            { count(); 
-    fprintf(flexo,"TOKEN 76 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 42 : %s\n",yytext);
     return('>'); }
 "^"            { count();
-    fprintf(flexo,"TOKEN 77 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 43 : %s\n",yytext);
     return('^'); }
 "|"            { count();
-    fprintf(flexo,"TOKEN 78 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 44 : %s\n",yytext);
     return('|'); }
 "?"            { count();
-    fprintf(flexo,"TOKEN 79 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 45 : %s\n",yytext);
     return('?'); }
 
 "\""(.)*"\"" {
     count();
-    fprintf(flexo,"TOKEN 80 : %s\n",yytext);
+    fprintf(flexo,"TOKEN 46 : %s\n",yytext);
     yylval.val.type = 4;
     yylval.val.strval = calloc(strlen(yytext),sizeof(char));
     strcpy(yylval.val.strval,yytext+1);

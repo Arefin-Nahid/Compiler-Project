@@ -1,0 +1,33 @@
+Project Overview Key Components:
+
+Lexical Analyzer (nahid.l):
+Handles tokenization of the input code
+Recognizes keywords, operators, identifiers, literals, etc.
+Generates tokens for the parser
+
+Parser (nahid.y):
+Implements the grammar rules for the language
+Handles syntax validation
+Manages symbol table and type checking
+Processes expressions and statements
+
+Identifier Management (identifier.c):
+Provides symbol table functionality
+Handles variable declarations and operations
+Manages data types and type conversions
+Supports basic arithmetic and logical operations
+
+Language Features:
+Object-oriented programming support (classes)
+Multiple data types (Int, Double, String)
+Control structures (if-else, switch-case, loops)
+Mathematical functions (trigonometric, logarithmic)
+Array support with multiple dimensions
+Variable declarations and assignments
+Import system for modules
+Function definitions with return types
+
+Output Generation:
+Generates token output (token_output.txt)
+Produces compilation information (info_output.txt)
+Provides detailed error messages for compilation issues
